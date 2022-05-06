@@ -1,0 +1,36 @@
+{
+  "users": [
+    {
+      "username": "name",
+      "password": "password"
+    },
+    {
+      "username": "name",
+      "password": "password"
+    },
+    {
+      "username": "name",
+      "password": "password"
+    }
+  ],
+  "posts": [
+    {
+      "guid": "16-digit-string",
+      "username": "username",
+      "userimage": "url",
+      "content": "some type of contents"
+    },
+    {
+      "guid": "16-digit-string",
+      "username": "username",
+      "userimage": "url",
+      "content": "some type of contents"
+    },
+    {
+      "guid": "16-digit-string",
+      "username": "username",
+      "userimage": "url",
+      "content": "some type of contents"
+    }
+  ]
+}

@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <link rel="stylesheet" href="style.css">
+
+  <title>Week 5 Day 3 Demo</title>
+</head>
+<body>
+  <header>
+    <!-- new pet form -->
+    <h1>New Pet</h1>
+    <form id="newPetForm">
+      Name: 
+      <input type="text" id="new-pet-name" placeholder="Name" name="name" value="">
+      Nickname:
+      <input type="text" id="new-pet-nickName" placeholder="Nickname" name="aka" value="">
+      Species:
+      <input type="text" id="new-pet-species" placeholder="Species" name="species" value="">
+      Breed:
+      <input type="text" id="new-pet-breed" placeholder="Breed" name="breed" value="">
+      Age:
+      <input type="number" id="new-pet-age" placeholder="Age" name="age" value="">
+  
+      <button id="putBtn" onclick="addPet()" class="" type="button">Submit</button>
+      <!-- <input type="button" id="putBtn" value="Submit"> -->
+    </form>
+  </header>
+
+  <main>
+    <!-- registered pet list -->
+    <div class="listTitle">
+      <h2>Registered Pets</h2>
+      <span class="actionBtns">
+        <button id="getBtn" onclick="getPets()" type="button">Fetch!</button>
+      </span>
+    </div>
+
+    <section id="petList">
+      <!-- <div class="petCard">
+        <h3 class="petName">[ Pet Name ]</h3>
+
+        <span class="detail">
+          <p>Name: </p>
+          <input type="text" class="text-right petName" value="petName" readonly>
+        </span>
+        <span class="detail">
+          <p>Nickname: </p>
+          <input type="text" class="text-right petAka" value="petAka" readonly>
+        </span>
+        <span class="detail">
+          <p>Species: </p>
+          <input type="text" class="text-right petSpecies" value="petSpecies" readonly>
+        </span>
+        <span class="detail">
+          <p>Breed: </p>
+          <input type="text" class="text-right petBreed" value="petBreed" readonly>
+        </span>
+        <span class="detail">
+          <p>Age: </p>
+          <input type="text" class="text-right petAge" value="petAge" readonly>
+        </span>
+
+        <div class="actionBtns">
+          <button class="deleteBtn" type="button">Delete</button>
+          <button class="editBtn" type="button">Edit</button>
+        </div>
+
+      </div> -->
+    </section>
+  </main>
+
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+  <script src="app.js"></script>
+</body>
+</html>

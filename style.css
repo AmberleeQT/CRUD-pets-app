@@ -1,0 +1,155 @@
+/** Variables */
+:root{
+  --grey-dark:#262b38;
+  --grey-light: #a8aaad;
+  --green: #8dbc4a;
+  --yellow: #e5c223;
+  --blue: #00aed9;
+  --teal: #17afc7; 
+}
+/** Properties to reset button, input defaults */
+/* appearance: none; border: none; outline: none; background: none; */
+
+/** General styles */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  font-family: 'Fira sans', sans-serif;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  background: var(--grey-dark);
+  color: var(--grey-light);
+}
+/** Common Styles */
+input {
+  /* Remove defaults */
+  appearance: none;
+  background: none;
+  outline: none;
+
+  /* Customizing */
+  margin: 0.5rem 0;
+  font-size: 1.25rem;
+  padding: 0.5rem 1rem;
+  border-radius: 1rem;
+  margin-right: 1rem;
+  background: var(--grey-dark);
+}
+input::placeholder {
+  color: var(--grey-light);
+  opacity: 80%;
+}
+input {
+  color: whitesmoke;
+}
+#putBtn, 
+button {
+  /** btn */
+  outline: none;
+  padding: 0.5rem 1rem;
+  border-radius: 1rem;
+  cursor: pointer;
+
+  /** text */
+  font-size: 1.25rem;
+  font-weight: 700;
+  background-color: var(--green);
+  color: var(--grey-dark);
+}
+#putBtn:hover,
+button:hover {
+  opacity: 80%;
+}
+#putBtn, 
+button:active {
+  opacity: 60%;
+}
+.actionBtns {
+  display: flex;
+  justify-content: flex-end;
+  padding: 0.5rem 1rem 0 0;
+}
+
+/** Header - New Pet Form */
+header {
+  padding: 1rem;
+  max-width: 800px;
+  width: 100%;
+  margin: 1rem auto;
+  background-image: linear-gradient(to right, var(--green), var(--yellow), var(--teal));
+  border-radius: 1rem;
+  color: var(--grey-dark);
+}
+h1 {
+  font-size: 2.5rem;
+  font-weight: 700;
+  margin-bottom: 1rem;
+  padding-top: 1rem;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  font-size: 1.5rem;
+}
+/** Body - Registered Pets */
+main {
+  max-width: 800px;
+  width: 100%;
+  margin: 1rem auto;
+  padding-top: 1rem;
+  border-top: 2px solid var(--grey-light);
+}
+.listTitle {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 1rem;
+}
+h2 {
+  margin: auto 0;
+}
+/** Pet Card */
+.petCard {
+  background-color: var(--green);
+  padding: 1rem;
+  border-radius: 1rem;
+  color: var(--grey-dark);
+  margin-bottom: 1rem;
+
+  transition: 0.4s;
+}
+
+h3 {
+  display: flex;
+  align-items: center;
+  font-size: 1.5rem;
+  flex: 1 1 0%;
+  margin-bottom: 0.5rem;
+}
+.detail {
+  display: flex;
+  flex-wrap: wrap;
+}
+p {
+  color: var(--grey-dark);
+  font-size: 1.25rem;
+  text-align: right;
+  margin: auto 0;
+}
+.text-right {
+  flex: 1 1 0%;
+}
+.editBtn {
+  background-color: var(--blue);
+}
+.deleteBtn {
+  appearance: none; 
+  border: none;
+  outline: none;
+  background: none;
+  color: crimson;
+}
